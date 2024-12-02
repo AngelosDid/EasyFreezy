@@ -6,7 +6,7 @@
 #### EasyFreezy can detect freezing responses even in low quality videos, provided that a good training with DLC has taken place. 
 #### EasyFreezy is primarily based on between ears (betwears) body part for freezing detection. It is also implementing left or right ear if the user wants to insert a second bodypart for detection. Nose is included too, in order to filter out freezing behaviors when there are indications of moving of nose.
 
-Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.<br><br><br><br>
+Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.<br><br><br>
 
 Some basic concepts are described below. You can also refer to the "Measuring freezing responses with Deeplabcut.pptx" and "How it works" folder for an understanding of these concepts.
 
