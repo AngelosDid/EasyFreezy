@@ -79,7 +79,31 @@ Ignore the user_betwears(or sec)_pf=5 as well as the comments related to it insi
 user_betwnose_prob_cut_frames defines how many future frames will be taken into account when calculating user_betwnose_prob_cut, which has been earlier described.<br><br>
 
 
+# Get labels with x,y position, p likelihood and parameter values 
 
+For first time use, run EasyFreezy with some example parameter values for user input. At this stage, you cannot estimate well the values for loc_diff and avged_diff , or set a proper interpolation range. Thereby, you just want to get the calculation of x,y axis for betwears, second body part and nose on your screen, along with the calculation of loc_diff and avged_diff for each single frame (see images in How it Works). <br><br>
+
+Make sure you run the cells below the main code, so that you will produce a pickle file for each video that you have analyzed for freezing. This pickle file(s) (not to be mistaken with DLC output) is created in the same directory where EasyFreezy.ipynb is. Save the pickle file(s) to another folder and copy its path). Open the labelling script and replace the path in pickle_directory (see in picture below) with the path that leads to your pickle files. Replace the path that leads to your raw recording video in the video_dir. Replace the output directory where your new labelled video will be saved in the saved_dir.<br><br>
+
+Alternatively, simply uncomment these three lines of code in the main code (by removing the #) : <br>
+#SelectDLCOutputDirectory()<br>
+#SelectVideoDirectory()<br>
+#SelectSaveDirectory()  <br>
+And an filedialog will open, prompting you to choose these directories in your explorer. <br><br>
+
+
+Replace the vw and vh with the widht and height of your recording video respectively <br>
+Set ul = 'l' for labels at the bottom of your screen or 'u' for labels at the top of your screen. <br>
+lhl_h_prop defines the percentage of height across which the labels will be spread. 10 means the 10% of overall height.<br>
+height_start moves the labels far from the top (or bottom) edge of the screen. Recommended to set around 10.<br>
+labelsize is merely the size of your labels
+
+
+
+
+
+
+![Screenshot_2](https://github.com/user-attachments/assets/b016d6af-06ee-40ab-b649-3b405180a109)
 
 
 
