@@ -1,5 +1,5 @@
 # EasyFreezy
-## A hard-coded approach to detect Freezing Behaviors based on DeepLabcut output
+## A fixed-threshold method to detect Freezing Behaviors based on DeepLabcut output
 
 #### EasyFreezy uses the .csv and .pickle output of DeepLabCut to detect freezing behaviors. An extended explanation of how the script works can be found inside the Description cell of EasyFreezy.ipynb. The role of each function is also described there -sometimes along with technical notes.
 #### EasyFreezy is designed to detect freezing behaviors that last at least a particular number of frames. It has been tested for freezing series of at least 25 or 50 frames in 25fps videos (that is, minimum 1 sec or 2 sec for a detection to be considered as freezing, respectively) 
