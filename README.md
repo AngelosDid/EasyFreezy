@@ -53,4 +53,35 @@ Assuming that there is a series of freezing frames (ff6,ff7,ff8,ff9...ff30) that
 The flags that are raised will eventually create chains of motion frames based on nose detection. All frames that belong to these chains will be removed from betwears or second body part list with freezing frames, thereby excluded from freezing. <br>
 However, a chain can only be created if motion flags are in close proximity. The distance between two motion flag frames must not be higher than the "user_motion_proximity" parameter. As a default, the accepted distance to create a chain of moving based on nose detection is 5 frames apart.
 
+## Interpolation uncertainty range
+
+The user defines a particular and relatively narrow range of p values based on DLC output that are low, yet not too low. These values will be linearly interpolatedfor all bodyparts, both for x and y axis.
+
+##  User Input and parameters 
+If you search for "User Input" inside EasyFreezy.ipynb, you will see a large cell that is commented out (by #). You can uncomment this code by selecting all text inside the cell and typing ctrl+?/ in visual studio code. Then you will be prompted to provide some input which corresponds to the next 8  general parameters <br><br>:
+user_fps<br>
+user_fps_fix<br>
+user_desired_duration<br>
+user_desired_extra_secs<br>
+user_warning<br>
+user_bins<br>
+user_double_reference<br>
+user_frms_cutoff<br>
+
+You can then replace the values of the parameters to the cell below, to avoid getting the script asking you every time about these parameters. Kindly note that if you run both the verbose cell and the next one, the values that you have inserted in the verbose (now uncommented cell) will change, unless you replace the values of the parameters to the cell below accordingly.
+
+The interpolation uncertainty range is defined by its two extremities, that is user_uncertain_left and user_uncertain_right.<br><br>
+
+user_betwears(or sec)_ff stands for future frames to be taken into account for calculation of avged_diff. Try the default value first, which is 6. <br><br>
+user_betwnose_ff stands for future frames to be taken into account for calculation of avged_diff of nose when validating betwears freezing behaviors.<br><br>
+user_secnose_ff stands for future frames to be taken into account for calculation of avged_diff of nose when validating second bodypart freezing behaviors.<br><br>
+Ignore the user_betwears(or sec)_pf=5 as well as the comments related to it inside the code. This is deprecated and will be removed in another version. It's not affecting the code.<br><br>
+user_betwnose_prob_cut_frames defines how many future frames will be taken into account when calculating user_betwnose_prob_cut, which has been earlier described.<br><br>
+
+
+
+
+
+
+
 
