@@ -4,6 +4,7 @@
 #### EasyFreezy uses the .csv and .pickle output of DeepLabCut to detect freezing behaviors. An extended explanation of how the script works can be found inside the Description cell of EasyFreezy.ipynb. The role of each function is also described there -sometimes along with technical notes.
 #### EasyFreezy can detect freezing responses even in low quality videos, provided that a good training with DLC has taken place. 
 #### EasyFreezy is primarily based on between ears (betwears) body part for freezing detection. It is also implementing left or right ear if the user wants to insert a second bodypart for detection. Nose is included too, in order to filter out freezing behaviors when there are indications of moving of nose.
+#### EasyFreezy is designed to detect freezing behaviors that last at least a particular number of frames. It has been tested for freezing series of at least 25 or 50 frames in 25fps videos (that is, minimum 1 sec or 2 sec, respectively) 
 
 Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.<br><br><br><br>
 
@@ -96,8 +97,8 @@ Replace the vw and vh with the widht and height of your recording video respecti
 Set ul = 'l' for labels at the bottom of your screen or 'u' for labels at the top of your screen. <br>
 lhl_h_prop defines the percentage of height across which the labels will be spread. 10 means the 10% of overall height.<br>
 height_start moves the labels far from the top (or bottom) edge of the screen. Recommended to set around 10.<br>
-labelsize is merely the size of your labels
-
+labelsize is merely the size of your labels<br>
+short_labelsize is the size of some temporary labels that will shortly appear in the start, indicating the total number of freezing behaviors observed for each bodypart
 
 
 
