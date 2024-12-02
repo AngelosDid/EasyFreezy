@@ -109,5 +109,8 @@ short_labelsize is the size of some temporary labels that will shortly appear in
 
 
 
+# Download the test_it_yourself rar file in the Releases to test how to code works. 
+
+
 
 
