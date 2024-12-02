@@ -5,6 +5,7 @@
 #### EasyFreezy is designed to detect freezing behaviors that last at least a particular number of frames. It has been tested for freezing series of at least 25 or 50 frames in 25fps videos (that is, minimum 1 sec or 2 sec for a detection to be considered as freezing, respectively) 
 #### EasyFreezy can detect freezing responses even in low quality videos, provided that a good training with DLC has taken place. 
 #### EasyFreezy is primarily based on between ears (betwears) body part for freezing detection. It is also implementing left or right ear if the user wants to insert a second bodypart for detection. Nose is included too, in order to filter out freezing behaviors when there are indications of moving of nose.
+#### EasyFreezy does not need overfit data to work with. Provided that the DLC training is sufficient, the coordinates of any analyzed video by DLC can be analyzed under the same parameters by EasyFreezy.
 
 Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.<br><br><br>
 
