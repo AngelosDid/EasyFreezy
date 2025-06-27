@@ -9,7 +9,7 @@
 
 Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.
 
-EasyFreezy has been already utilized for scientific experiements. Kindly cite this github page in case of using data derived from EasyFreezy in your publications. 
+####EasyFreezy has been already utilized for scientific experiements. Kindly cite this github page in case of using data derived from EasyFreezy in your publications. <br><br>
 
 <br><br><br>
 
