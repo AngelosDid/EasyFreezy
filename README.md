@@ -7,9 +7,9 @@
 #### EasyFreezy is primarily based on between ears (betwears) body part for freezing detection. It is also implementing left or right ear if the user wants to insert a second bodypart for detection. Nose is included too, in order to filter out freezing behaviors when there are indications of moving of nose.
 #### EasyFreezy does not need overfit data to work with. Provided that the DLC training is sufficient, the coordinates of any analyzed video by DLC can be analyzed under the same parameters by EasyFreezy.
 
-Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.
+Please not that EasyFreezy has been only tested and validated for 25fps videos. For videos of higher fps rate, modifications might need to be done. You can also consider downscaling to 25fps.<br><br><br><br>
 
-EasyFreezy has been already utilized for scientific experiements. Kindly cite this github page in case of using data derived from EasyFreezy in your publications. <br><br>
+#EasyFreezy has been already utilized for scientific experiements. Kindly cite this github page in case of using data derived from EasyFreezy in your publications. <br><br>
 
 <br><br><br>
 
