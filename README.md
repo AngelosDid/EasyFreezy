@@ -42,7 +42,7 @@ Important Note: By convention, when EasyFreezy was beeing made for the first tim
 A single violation of the avged_diff is also permitted ONLY for detection of freezing based on betwears. Assuming that the avged_diff in our example above for frame 0 is higher that the cut-off criterion, the script will also calculate the avged_diff when taking frame 1 as reference (meaning starting to calculate the averaged_differences from frame 2). If there is no violation there, then the frame is considered as freezing. This further examination has been especially helpful for lower quality videos.
 
 
-* The differences between consecutive elements of an array.
+/* The differences between consecutive elements of an array.
 
 ## Insertion of second bodypart for freezing detection
 
