@@ -26,7 +26,7 @@ Some basic concepts are described below. You can also refer to the "Measuring fr
 loc_diff can be used as a cut-off criterion to detect with accuracy the start of a freezing behavior. It is also used for detecting following freezing frames. <br><br><br><br>
 
 ## avged_diff : is used when loc_diff criterion for a bodypart is violated. To calculate avged_diff : <br><br>
-1)First we calculate the absolute sum for np.ediff1d differences between future frames and divide it by a number (for between ears body part, this number is the user_betwears_ff-1, that is, the number of future frames that the user has selected to include -1.) for x axis.<br>
+1)First we calculate the absolute sum for np.ediff1d differences* between future frames and divide it by a number (for between ears body part, this number is the user_betwears_ff-1, that is, the number of future frames that the user has selected to include -1.) for x axis.<br>
 2)Then  we calculate the absolute sum for np.ediff1d differences between future frames and divide it by the same number for the y axis.<br>
 3)Finally, we get the sum of the 2 sums above.<br><br>
 Here is an example of calculating avged_distance for frame 0 (average difference always starts from next frame, that is, frame 1). The user_betwears_ff here is 5 and the denominator is user_betwears_ff-1, that is 4.
@@ -41,6 +41,8 @@ Important Note: By convention, when EasyFreezy was beeing made for the first tim
 
 A single violation of the avged_diff is also permitted ONLY for detection of freezing based on betwears. Assuming that the avged_diff in our example above for frame 0 is higher that the cut-off criterion, the script will also calculate the avged_diff when taking frame 1 as reference (meaning starting to calculate the averaged_differences from frame 2). If there is no violation there, then the frame is considered as freezing. This further examination has been especially helpful for lower quality videos.
 
+
+* The differences between consecutive elements of an array.
 
 ## Insertion of second bodypart for freezing detection
 
