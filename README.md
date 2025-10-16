@@ -26,8 +26,8 @@ Some basic concepts are described below. You can also refer to the "Measuring fr
 loc_diff can be used as a cut-off criterion to detect with accuracy the start of a freezing behavior. It is also used for detecting following freezing frames. <br><br><br><br>
 
 ## avged_diff : is used when loc_diff criterion for a bodypart is violated. To calculate avged_diff : <br><br>
-1) First we calculate the absolute sum for np.ediff1d differences* between future frames and divide it by a number (for between ears body part, this number is the user_betwears_ff-1, which corresponds to the number of future frames that the user has selected to include minus 1 frame.) for x axis.<br>
-2) Then  we calculate the sum absolute for np.ediff1d differences between future frames and divide it by the same number for the y axis.<br>
+1) First, we calculate the absolute sum for np.ediff1d differences* between future frames and divide it by a number (for between ears body part, this number is the user_betwears_ff-1, which corresponds to the number of future frames that the user has selected to include minus 1 frame.) for x axis.<br>
+2) Then,  we calculate the sum absolute for np.ediff1d differences between future frames and divide it by the same number for the y axis.<br>
 3) Finally, we get the sum of the 2 sums above.<br><br>
 Here is an example of calculating avged_distance for frame 0 (average difference always starts from next frame, that is, frame 1). The user_betwears_ff here is 5 and the denominator is user_betwears_ff-1, that is 4.
 
