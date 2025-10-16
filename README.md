@@ -44,7 +44,7 @@ A single violation of the avged_diff is also permitted ONLY for detection of fre
 
 ## Insertion of second bodypart for freezing detection
 
-Especially for lower quality videos, the insertion of a second body part for freezing detection can be helpful. Same logic applies to detecting a second body part. However, because by inserting a second body part the risk of False Positive increases, one more cut-off criterion is inserted. This is "user_range_prob". "user_range_prob" only includes a second body part's detected freezing in list with freezing behaviors if the p value in DLC output is high enough.
+Especially for lower quality videos, the insertion of a second body part for freezing detection can be helpful. Same computational logic applies to detecting a second body part. However, because by inserting a second body part the risk of False Positive increases, one more cut-off criterion is inserted. This is "user_range_prob". "user_range_prob" only includes a second body part's detected freezing in list with freezing behaviors if the p value in DLC output is high enough.
 
 ## Using nose to filter out behaviors previously considered as freezing
 
