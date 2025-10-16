@@ -61,7 +61,7 @@ Assuming that there is a series of freezing frames (ff6,ff7,ff8,ff9...ff30) that
 
 ## Combining motion flags to create chains
 
-The flags that are raised will eventually create chains of motion frames based on nose detection. All frames that belong to these chains will be removed from betwears or second body part list with freezing frames, thereby excluded from freezing. <br>
+The flags that are raised by nose movement detection will eventually create chains of motion frames based on nose detection. All frames that belong to these chains will be removed from betwears or second body part list with freezing frames, thereby excluded from freezing. <br>
 However, a chain can only be created if motion flags are in close proximity. The distance between two motion flag frames must not be higher than the "user_motion_proximity" parameter. As a default, the accepted distance to create a chain of moving based on nose detection is 5 frames apart.
 
 ## Interpolation uncertainty range
