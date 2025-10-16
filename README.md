@@ -66,7 +66,7 @@ However, a chain can only be created if motion flags are in close proximity. The
 
 ## Interpolation uncertainty range
 
-The user defines a particular and relatively narrow range of p values based on DLC output that are low, yet not too low. These values will be linearly interpolatedfor all bodyparts, both for x and y axis.
+The user defines a particular and relatively narrow range of p values based on DLC output that are low, yet not too low. These values will be linearly interpolated for all bodyparts, both for x and y axis.
 
 ##  User Input and parameters 
 If you search for "User Input" inside EasyFreezy.ipynb, you will see a large cell that is commented out (by #). You can uncomment this code by selecting all text inside the cell and typing ctrl+?/ in visual studio code. Then you will be prompted to provide some input which corresponds to the next 8  general parameters <br><br>:
